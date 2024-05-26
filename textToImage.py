@@ -20,11 +20,7 @@ def generate_image(prompt, output_path="generated_image.png", model_path="CompVi
         # If model_path is a safetensors file, we assume the directory contains the necessary configuration files
         model_dir = os.path.dirname(model_path)
         pipe = StableDiffusionPipeline.from_single_file(
-            model_dir,
-            # "https://huggingface.co/WarriorMama777/OrangeMixs/blob/main/Models/AbyssOrangeMix/AbyssOrangeMix.safetensors"
-            # "https://huggingface.co/Lykon/DreamShaper/blob/main/DreamShaper_6.2_BakedVae_pruned.safetensors"
-            # torch_dtype=torch.float16,
-            # use_safetensors=use_safetensors
+            model_path
         )
     else:
         pipe = StableDiffusionPipeline.from_pretrained(

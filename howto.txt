@@ -1,6 +1,6 @@
 How to generate text to image you can use floowing this command
 
-python textToImage.py --text <your promp or .txt file> --model <put link from hugger or input noting for stabledifv1.5>
+python textToImage.py --text <your promp or .txt file> --model <put link from hugger of path to your model or input noting for stabledifv1.5>
 example --model "https://huggingface.co/Lykon/DreamShaper/blob/main/DreamShaper_6.2_BakedVae_pruned.safetensors"
 
 How to generate text to speech to the same way but 
